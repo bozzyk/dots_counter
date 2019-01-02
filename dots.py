@@ -28,7 +28,7 @@ def custom_filter(img, diam=3):
     return output
 
 
-orig = cv2.imread("test.png")
+orig = cv2.imread("dots.png")
 gray = cv2.cvtColor(orig, cv2.COLOR_BGR2GRAY)
 
 nimg = neighbors_mean(gray,3)
