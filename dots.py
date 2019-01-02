@@ -37,7 +37,7 @@ dots = custom_filter(maxed,9)
 
 print (dots.shape)
 counter = 0
-np.savetxt('dots.txt',dots, fmt= '%d')
+np.savetxt('static/dots.txt',dots, fmt= '%d')
 for i in dots:
     for j in i:
         if j != 255: counter += 1
